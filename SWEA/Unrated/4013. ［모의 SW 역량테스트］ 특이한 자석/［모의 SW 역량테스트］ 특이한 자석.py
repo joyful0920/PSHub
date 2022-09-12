@@ -1,25 +1,18 @@
-# import sys
 from collections import deque
-# sys.stdin = open('input.txt')
 
 
 def rotation(num, di):
     rotated[num] = True     # 현재 자석 회전 여부 True 처리
 
-    if di == 1:             # 양옆 자석의 회전 방향 계산
-        rdi = -1
-    else:
-        rdi = 1
-
     if 0 <= num - 1 < 4 and not rotated[num - 1]:        # 양옆 자석 번호가 범위 내이고 회전을 안했다면
         if magnetics[num][6] != magnetics[num - 1][2]:   # 회전 가능한 경우만
-            rotation(num - 1, rdi)                       # 재귀적으로 회전 실행
+            rotation(num - 1, -di)                       # 재귀적으로 회전 실행
 
     if 0 <= num + 1 < 4 and not rotated[num + 1]:
         if magnetics[num][2] != magnetics[num + 1][6]:
-            rotation(num + 1, rdi)
+            rotation(num + 1, -di)
 
-    magnetics[num].rotate(di)   # 덱의 rotate 함수로 간단히 회전 수행
+    magnetics[num].rotate(di)   # 덱의 rotate 함수로 간단히 회전 실행!
 
 
 for tc in range(1, int(input()) + 1):
