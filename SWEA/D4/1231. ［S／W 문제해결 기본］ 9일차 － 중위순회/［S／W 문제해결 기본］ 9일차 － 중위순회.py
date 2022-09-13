@@ -8,7 +8,6 @@ def inorder(v):             # 중위 순회 함수
 
 for tc in range(1, 11):
     n = int(input())    # 노드 수
-    e = n - 1           # 간선 수
 
     ch1 = [0] * (n + 1)     # 왼쪽 자식 노드 리스트
     ch2 = [0] * (n + 1)     # 오른쪽 자식 노드 리스트
