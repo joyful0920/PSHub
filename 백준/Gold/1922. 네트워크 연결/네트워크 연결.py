@@ -1,52 +1,40 @@
 import sys
-sys.setrecursionlimit(10**9) # 재귀 깊이 변경
 si = sys.stdin.readline
 
-# find 연산 함수
-def find_parent(parent, x):
-    # 루트 노드가 아니면, 루트 노드를 찾을 때까지 재귀 호출
-    if parent[x] != x:
-        parent[x] = find_parent(parent, parent[x])
+
+def find_parent(x):      # 파인드 연산
+    if x != parent[x]:
+        parent[x] = find_parent(parent[x])
     return parent[x]
 
-# union 연산 함수
-def union_parent(parent, a, b):
-    a = find_parent(parent, a)
-    b = find_parent(parent, b)
+
+def union_parent(a, b):  # 유니온 연산
+    a, b = find_parent(a), find_parent(b)
     if a < b:
         parent[b] = a
     else:
         parent[a] = b
 
-# 노드의 개수 N과 간선의 개수 M 입력
-n = int(si())
-m = int(si())
 
-# 부모 테이블 생성 및 자기 자신으로 초기화
-parent = [0] * (n + 1)
-for i in range(1, n + 1):
-    parent[i] = i
+n = int(si())                # 컴퓨터 수
+m = int(si())                # 연결 선 수
+parent = list(range(n + 1))  # 부모 테이블 생성 및 자기 자신으로 초기화
 
-# 간선 정보를 담을 리스트
 edges = []
-# 최종 유지비를 담을 변수
-result = 0
-
-# 모든 간선 정보 입력 받기
 for _ in range(m):
-    a, b, c = map(int, si().split())
-    # 간선 리스트에 저장
-    edges.append((a, b, c))
+    a, b, cost = map(int, si().split())
+    edges.append((cost, a, b))  # 엣지 정보를 비용과 함께 튜플로 묶어 저장
+edges.sort()                    # 비용 기준 오름차순 정렬!
 
-# 간선을 비용순으로 정렬
-edges.sort(key=lambda x:x[2]) # 비용 순으로 정렬하기 위해 람다식 사용
-
-# 간선 확인
+result, cnt = 0, 0              # 최종 비용을 저장할 결과 변수 & MST를 만드는 데 사용한 간선 수 변수
 for edge in edges:
-    a, b, c = edge
-    # 사이클이 발생하지 않는 경우에만 집합에 포함
-    if find_parent(parent, a) != find_parent(parent, b):
-        union_parent(parent, a, b)
-        result += c
+    cost, a, b = edge
+    if find_parent(a) != find_parent(b):    # 두 노드의 루트가 다르다면 싸이클 발생 X
+        union_parent(a, b)                  # 유니온~
+        result += cost                      # 비용 더해주고
+        cnt += 1                            # 카운트도!
+
+    if cnt >= n - 1:    # MST가 완성됐다면
+        break           # 더 이상 간선 확인할 필요 X
 
 print(result)
