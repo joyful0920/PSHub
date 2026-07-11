@@ -72,8 +72,3 @@ algorithms/<topic>/<problem>/
 ├── README.md   問題の要約とメモ（自作）
 └── main.ts     解答
 ```
-
-## メモ
-
-- 提出は JavaScript。ビルド後の `dist/main.js` を貼る。
-- `node:` プレフィックスが使えない環境では `require("readline")` に変える。
