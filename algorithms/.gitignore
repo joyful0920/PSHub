@@ -1,0 +1,9 @@
+node_modules/
+dist/
+
+# 練習用のスクラッチファイル（問題ごとに差し替え・追跡しない）
+input.txt
+output.txt
+
+# 解答スクラッチ本体（テンプレは README.md に記載）
+src/main.ts

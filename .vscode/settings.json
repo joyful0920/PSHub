@@ -1,0 +1,7 @@
+{
+  // コーディングテスト練習用リポジトリ: Copilot の補完を無効化する
+  "github.copilot.enable": {
+    "*": false
+  },
+  "github.copilot.editor.enableAutoCompletions": false
+}

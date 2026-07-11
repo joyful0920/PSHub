@@ -1,0 +1,20 @@
+{
+  "name": "algorithms-practice",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local TypeScript practice environment for stdin-based online-judge problems (submit as JavaScript)",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx src/main.ts < input.txt",
+    "check": "tsc --noEmit",
+    "test": "node test.js",
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
