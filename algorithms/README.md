@@ -1,9 +1,7 @@
 # TypeScript 練習環境
 
-標準入力ベースのオンラインジャッジ向け TypeScript 練習用ワークスペース。
+標準入力ベースのアルゴリズム問題を TypeScript で練習するためのワークスペース。
 `src/main.ts` の `solve()` だけを書き換えて解く。
-
-TS で書いて `npm run build` で JavaScript（CommonJS）に変換し、提出先に貼り付ける。
 
 ## セットアップ
 
@@ -21,7 +19,7 @@ Node.js 20 以上。
 | `npm run dev` | `input.txt` を標準入力に `src/main.ts` を実行 |
 | `npm run check` | 型チェック |
 | `npm test` | 実行結果を `output.txt` と比較 |
-| `npm run build` | 提出用 JS を `dist/main.js` に出力 |
+| `npm run build` | `src/main.ts` を JS（`dist/main.js`）にビルド |
 
 ## テンプレート
 
@@ -59,7 +57,6 @@ function solve(lines: string[]): string | number {
 1. `input.txt` に入力、`output.txt` に期待出力を貼る
 2. `src/main.ts` の `solve()` を書く
 3. `npm run dev` → `npm test` → `npm run check`
-4. `npm run build` で出た `dist/main.js` を提出
 
 `input.txt` `output.txt` `node_modules/` `dist/` は追跡しない。
 
