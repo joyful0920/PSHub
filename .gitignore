@@ -2,3 +2,4 @@ test.py
 input.txt
 output.txt
 /.idea
+/.claude/settings.local.json
