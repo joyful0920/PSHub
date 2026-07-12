@@ -17,18 +17,15 @@ reader.on("close", () => {
 });
 
 function solve(lines: string[]): string {
-  const [n, a, b]: number[] = lines[0].split(" ").map((c: string) => Number(c));
+  const [n, x, y]: number[] = lines[0].split(" ").map(Number);
 
-  let answer = "";
-  for (let i: number = 1; i < n + 1; i++) {
-    if (i % a !== 0 && i % b !== 0) answer += "N";
-    else {
-      if (i % a === 0) answer += "A";
-      if (i % b === 0) answer += "B";
-    }
-
-    if (i !== n) answer += "\n";
+  const result: string[] = [];
+  for (let i: number = 1; i <= n; i++) {
+    let s: string = "";
+    if (i % x === 0) s += "A";
+    if (i % y === 0) s += "B";
+    result.push(s || "N");
   }
 
-  return answer;
+  return result.join("\n");
 }
