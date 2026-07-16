@@ -21,7 +21,9 @@ function solve(lines: string[]): string {
 
   // 合格点が 0 なら全員合格。点数を読む必要もない。
   if (m === 0) {
-    return Array.from({ length: n }, (_, i: number) => i + 1).join("\n");
+    const all: number[] = [];
+    for (let i: number = 1; i <= n; i++) all.push(i);
+    return all.join("\n");
   }
 
   // ここでは m > 0 が確定しているので、成績がマイナスなら必ず不合格。
