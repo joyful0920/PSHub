@@ -20,8 +20,5 @@ function solve(lines: string[]): string {
   const n: number = Number(lines[0]);
   const text: string = lines[1];
 
-  const answer: string[] = [];
-  for (let i: number = 0; i < n; i++) answer.push(text);
-
-  return answer.join("");
+  return text.repeat(n);
 }
