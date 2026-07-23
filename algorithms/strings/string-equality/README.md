@@ -13,8 +13,8 @@ S と T が完全に一致すれば `Yes`、そうでなければ `No` を出力
 
 | S | T | 出力 |
 | --- | --- | --- |
-| `hello` | `hello` | `Yes` |
-| `cat` | `dog` | `No` |
+| `apple` | `apple` | `Yes` |
+| `sun` | `moon` | `No` |
 
 ## 解法メモ
 

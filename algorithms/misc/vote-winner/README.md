@@ -22,28 +22,28 @@ a_1       ← 投票された名前（N 行）
 入力:
 ```
 5
-sato
-suzuki
-takahashi
-suzuki
-suzuki
+tom
+ken
+sam
+ken
+ken
 ```
 出力:
 ```
-suzuki
+ken
 ```
-（suzuki 3 票が最多）
+（ken 3 票が最多）
 
 入力:
 ```
 3
-alice
-bob
-alice
+foo
+bar
+foo
 ```
 出力:
 ```
-alice
+foo
 ```
 
 ## 解法メモ

@@ -12,8 +12,8 @@
 
 | 入力 | 出力 |
 | --- | --- |
-| `HELLO` | `OLLEH` |
-| `WORLD` | `DLROW` |
+| `CLAUDE` | `EDUALC` |
+| `NIGHT` | `THGIN` |
 
 ## 解法メモ
 

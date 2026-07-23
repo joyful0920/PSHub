@@ -14,8 +14,8 @@
 
 | 入力 | 出力 |
 | --- | --- |
-| `Alan Turing` | `A.T` |
-| `Grace Hopper` | `G.H` |
+| `Ada Lovelace` | `A.L` |
+| `Linus Torvalds` | `L.T` |
 
 ## 解法メモ
 

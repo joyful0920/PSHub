@@ -15,28 +15,28 @@
 入力:
 ```
 3
-alice42
-bob7
-carol128
+node12
+vue3
+react256
 ```
 出力:
 ```
-bob7
-alice42
-carol128
+vue3
+node12
+react256
 ```
-（7 < 42 < 128）
+（3 < 12 < 256）
 
 入力:
 ```
 2
-zebra1000
-ant2
+widget99
+gadget5
 ```
 出力:
 ```
-ant2
-zebra1000
+gadget5
+widget99
 ```
 
 ## 解法メモ

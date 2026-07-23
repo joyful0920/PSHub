@@ -14,8 +14,8 @@ T の各英字を、その文字がアルファベットで何番目かに対応
 
 | S（規則表） | T | 出力 |
 | --- | --- | --- |
-| `ABCDEFGHIJKLMNOPQRSTUVWXYZ` | `Hello` | `HELLO` |
-| `abcdefghijklmnopqrstuvwxyz` | `Hello` | `hello` |
+| `ABCDEFGHIJKLMNOPQRSTUVWXYZ` | `code` | `CODE` |
+| `abcdefghijklmnopqrstuvwxyz` | `CODE` | `code` |
 
 ## 解法メモ
 

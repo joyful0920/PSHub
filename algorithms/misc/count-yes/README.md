@@ -13,7 +13,7 @@
 
 入力:
 ```
-yyyynnnnny
+ynynynynyn
 ```
 出力:
 ```
@@ -22,11 +22,11 @@ yyyynnnnny
 
 入力:
 ```
-nnnnnnnnnn
+yyyyyyyyyy
 ```
 出力:
 ```
-0
+10
 ```
 
 ## 解法メモ

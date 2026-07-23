@@ -24,36 +24,36 @@ o p              ← 購入者名 金額（M 行）
 入力:
 ```
 3
-kim lee park
+tom sam ken
 4
-kim 500
-lee 500
-lee 2000
-park 800
+tom 500
+sam 500
+sam 2000
+ken 800
 ```
 出力:
 ```
-lee
-park
-kim
+sam
+ken
+tom
 ```
-（lee 2500 / park 800 / kim 500）
+（sam 2500 / ken 800 / tom 500）
 
 入力:
 ```
 3
-a b c
+x y z
 2
-b 500
-c 300
+y 400
+z 200
 ```
 出力:
 ```
-b
-c
-a
+y
+z
+x
 ```
-（a は購入 0 円。それでも順位に含め、最下位になる）
+（x は購入 0 円。それでも順位に含め、最下位になる）
 
 ## 解法メモ
 

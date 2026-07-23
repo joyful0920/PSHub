@@ -25,18 +25,18 @@ q t
 入力:
 ```
 3
-seoul 9
-london 0
+tokyo 9
+paris 1
 newyork -5
-seoul 08:00
+tokyo 12:00
 ```
 出力:
 ```
-08:00
-23:00
-18:00
+12:00
+04:00
+22:00
 ```
-（UTC = 8 - 9 = -1 時。london: -1 → 23、newyork: -1-5 = -6 → 18）
+（UTC = 12 - 9 = 3 時。paris: 3+1 → 04、newyork: 3-5 = -2 → 22）
 
 ## 解法メモ
 

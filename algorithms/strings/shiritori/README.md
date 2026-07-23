@@ -15,10 +15,10 @@
 
 | 入力 | 出力 |
 | --- | --- |
-| `3` / `apple` / `eagle` / `echo` | `Yes` |
-| `3` / `cat` / `tiger` / `dog` | `r d` |
+| `3` / `sun` / `night` / `tiger` | `Yes` |
+| `3` / `apple` / `eagle` / `cat` | `e c` |
 
-（例 2 は `tiger` の末尾 `r` と `dog` の先頭 `d` が不一致）
+（例 2 は `eagle` の末尾 `e` と `cat` の先頭 `c` が不一致）
 
 ## 解法メモ
 

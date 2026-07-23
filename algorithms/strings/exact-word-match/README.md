@@ -14,9 +14,9 @@ S が単語リストに**完全一致**で含まれれば `Yes`、なければ `
 
 入力:
 ```
-pizza
+apple
 3
-cheese pizza salad
+banana apple grape
 ```
 出力:
 ```
@@ -25,15 +25,15 @@ Yes
 
 入力:
 ```
-egg
+cat
 2
-eggplant boiled
+category dog
 ```
 出力:
 ```
 No
 ```
-（`egg` は `eggplant` の一部だが、完全一致する単語ではないので `No`）
+（`cat` は `category` の一部だが、完全一致する単語ではないので `No`）
 
 ## 解法メモ
 

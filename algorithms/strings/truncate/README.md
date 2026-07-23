@@ -14,8 +14,8 @@ S の先頭から n 文字を取り出して出力する。
 
 | n | S | 出力 |
 | --- | --- | --- |
-| `3` | `abcdef` | `abc` |
-| `4` | `typescript` | `type` |
+| `2` | `hello` | `he` |
+| `5` | `keyboard` | `keybo` |
 
 ## 解法メモ
 

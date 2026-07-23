@@ -13,8 +13,8 @@
 
 | 入力 | 出力 |
 | --- | --- |
-| `hello` | `HELLO` |
-| `world` | `WORLD` |
+| `cat` | `CAT` |
+| `japan` | `JAPAN` |
 
 ## 解法メモ
 

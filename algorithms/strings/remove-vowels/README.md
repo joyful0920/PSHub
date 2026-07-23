@@ -13,8 +13,8 @@
 
 | 入力 | 出力 |
 | --- | --- |
-| `Programming` | `Prgrmmng` |
-| `Yamada` | `Ymd` |
+| `Beautiful` | `Btfl` |
+| `Tokyo` | `Tky` |
 
 ## 解法メモ
 

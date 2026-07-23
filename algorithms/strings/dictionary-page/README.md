@@ -20,26 +20,27 @@ s_1 s_2 ... s_N
 
 入力:
 ```
-5 2 2
-pear apple fig date cherry
+4 2 1
+banana apple cherry date
 ```
 出力:
 ```
-date
-fig
+apple
+banana
 ```
-（辞書順: apple cherry date fig pear。1 ページ目は apple, cherry、2 ページ目(3〜4 番目)は date, fig）
+（辞書順: apple banana cherry date。1 ページ目は apple, banana）
 
 入力:
 ```
-5 2 3
-pear apple fig date cherry
+4 2 2
+banana apple cherry date
 ```
 出力:
 ```
-pear
+cherry
+date
 ```
-（3 ページ目は 5 番目の pear のみ）
+（2 ページ目(3〜4 番目)は cherry, date）
 
 ## 解法メモ
 

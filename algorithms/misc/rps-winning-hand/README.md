@@ -26,21 +26,21 @@ a_1 .. a_N   ← 各自の手（N 行）
 入力:
 ```
 3
+paper
 rock
-scissors
-rock
+paper
 ```
 出力:
 ```
-rock
+paper
 ```
-（rock と scissors の 2 種類 → rock の勝ち）
+（paper と rock の 2 種類 → paper の勝ち）
 
 入力:
 ```
 2
-paper
-paper
+scissors
+scissors
 ```
 出力:
 ```
